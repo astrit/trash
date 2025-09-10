@@ -1,0 +1,85 @@
+:root {
+  --border: hsla(0, 0%, 100%, 0.1);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding: 40px;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    .part {
+      flex: 1;
+      min-width: 200px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  padding-inline: 40px;
+  transition: all 420ms;
+
+  &:focus-within {
+    background-color: hsla(0, 0%, 49%, 0.1);
+    border-color: hsla(0, 0%, 100%, 0.4);
+  }
+
+  .input {
+    display: flex;
+    width: 100%;
+    appearance: none;
+    border: none;
+    height: 10vh;
+    outline: none;
+    background: none;
+    padding: 40px 0;
+    font-size: 20px;
+    color: #fff;
+
+    &::placeholder {
+      font: inherit;
+      color: #ffffff78;
+    }
+  }
+
+  .author {
+    display: flex;
+    gap: 1ch;
+    align-items: center;
+    font-size: 12px;
+
+    img {
+      gap: 20px;
+      border-radius: 200px;
+    }
+  }
+}
+
+svg {
+  fill: none;
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
