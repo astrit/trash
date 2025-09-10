@@ -83,3 +83,18 @@ svg {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+
+.source {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 10px;
+  padding: 40px;
+  width: max-content;
+
+  svg {
+    height: 30px;
+    width: auto;
+    stroke: none;
+  }
+}
